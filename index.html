@@ -16,7 +16,8 @@
         <div class="logo">🧪 化学クエスト</div>
         <nav>
             <button onclick="showHome()">ホーム</button>
-            <button onclick="loadGame('elements')">元素記号</button>
+            <button onclick="loadGame('elements')">基礎元素</button>
+            <button onclick="loadGame('master')">全元素118</button> <!-- NEW -->
             <button onclick="loadGame('equations')">化学反応式</button>
             <button onclick="loadGame('ph')">酸・塩基</button>
         </nav>
@@ -26,11 +27,15 @@
         <!-- Dynamic content will be loaded here via JavaScript -->
         <div class="hero">
             <h1>化学の世界へようこそ！</h1>
-            <p>高校化学の基礎をゲームで楽しく学ぼう。</p>
+            <p>高校化学の基礎からマニアックな元素まで。</p>
             <div class="menu-grid">
                 <div class="menu-card" onclick="loadGame('elements')">
-                    <h2>🔥 元素記号マスター</h2>
-                    <p>基本の元素記号をスピード暗記！</p>
+                    <h2>🔥 基礎元素クイズ</h2>
+                    <p>高校化学で必須の基本20個+α！</p>
+                </div>
+                <div class="menu-card special-card" onclick="loadGame('master')">
+                    <h2>💀 周期表マスター</h2>
+                    <p>水素からオガネソンまで全118元素に挑戦！</p>
                 </div>
                 <div class="menu-card" onclick="loadGame('equations')">
                     <h2>⚖️ 化学反応式パズル</h2>
